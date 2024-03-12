@@ -1,0 +1,26 @@
+@use 'config/reset.scss';
+@use 'config/product.scss';
+@use 'config/colors.scss';
+
+.produtos{
+    .produto{
+        &__imagem{
+            width: 100%;
+        }
+        
+        &__nome{
+            font-size: 1.2em;
+            margin: 8px 0;
+        }
+        
+        &__descricao{
+            color: colors.$textColor;
+        }
+    }
+
+    .produto--em--destaque{
+        padding: 8px;
+        border: 2px solid colors.$borderColor;
+        background-color: colors.$selectedProduct;
+    }
+}
